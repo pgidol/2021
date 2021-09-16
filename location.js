@@ -1,5 +1,5 @@
 var a = 0,b = 6,x,newBGI
-var bgimgArr = ["1.jpg","2.png","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"]
+var bgimgArr = ["1.jpg","2.png","3.jpg","4.jpg","5.jpg","6.jpg","7.png"]
 $(document).ready(function(){
 	
     $("#baidu").click(function(){
