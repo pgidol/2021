@@ -25,9 +25,15 @@ $(document).ready(function(){
 	});
 	
 	function changeWallpaper(){
-		x = Math.round(Math.random()*(b-a)+a)
-		newBGI = "url(https://cdn.jsdelivr.net/gh/pgidol/2021@main/imgs/"+bgimgArr[x]+")"
-		console.log(newBGI)
-		$('body').css("background-image",newBGI)
+		x = Math.round(Math.random()*6)
+		//执行换壁纸时取一个从0到6随机数 保存为x
+		if(y==x){
+			console.log("重新随机")
+			changeWallpaper()
+		}else{
+			newBGI = "url(https://cdn.jsdelivr.net/gh/pgidol/2021@main/imgs/"+bgimgArr[x]+")"
+			$('body').css("background-image",newBGI)
+			y = x
+		}
 	}
 })
